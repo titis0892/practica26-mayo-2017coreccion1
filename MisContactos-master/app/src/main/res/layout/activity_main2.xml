@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arturopacheco.miscontactos.Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="49dp"
+            android:textColor="@color/colorletras"
+            android:text="Nombre:"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/txttelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtnombre"
+            android:layout_marginTop="49dp"
+            android:textColor="@color/colorletras"
+            android:text="Teléfono:"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/txtcorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txttelefono"
+            android:layout_marginTop="53dp"
+            android:textColor="@color/colorletras"
+            android:text="Correo: "
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/editnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txttelefono"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="27dp"
+            android:ems="10"
+            android:textColor="@color/colorediciones"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txttelefono"
+            android:layout_alignEnd="@+id/editnombre"
+            android:ems="10"
+            android:textColor="@color/colorediciones"
+            android:inputType="textPersonName"
+            android:text="Phone" />
+
+        <EditText
+            android:id="@+id/editCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtcorreo"
+            android:layout_alignStart="@+id/editTel"
+            android:ems="10"
+            android:textColor="@color/colorediciones"
+            android:inputType="textPersonName"
+            android:text="Email" />
+
+        <Button
+            android:id="@+id/btnagregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/editCorreo"
+            android:layout_marginBottom="58dp"
+            android:text="Agregar" />
+    </RelativeLayout>
+</LinearLayout>
